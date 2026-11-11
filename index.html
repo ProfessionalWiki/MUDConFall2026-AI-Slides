@@ -573,7 +573,7 @@
 		body.video-slide .reveal .controls,
 		body.video-slide .reveal .slide-number,
 		body.video-slide .reveal .progress {
-			display: none;
+			display: none !important;
 		}
 	</style>
 </head>
@@ -694,14 +694,56 @@
 				</div>
 			</section>
 
-			<section class="beat" data-background-video="beats/mcp-1-answer.mp4" data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+			<section class="beat" data-background-video="beats/mcp-1-answer.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
 				data-label="Recorded · waits sped up">
 				<aside class="notes"><p>"A web chat, connected to the museum wiki through the MCP server. A question no single page answers: the AI searches, reads what it needs, and answers with links."</p></aside>
 			</section>
 
-			<section class="beat" data-background-video="beats/mcp-2-query.mp4" data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
-				data-label="Recorded · waits sped up">
-				<aside class="notes"><p>"The visitor figures are structured data in NeoWiki. The AI writes a graph query, runs it through the MCP server, and does the arithmetic."</p></aside>
+			<!-- MCP clip 2, with the optional developer demo one step down -->
+			<section>
+				<section class="beat" data-background-video="beats/mcp-2-query.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+					data-label="Recorded · waits sped up">
+					<aside class="notes"><p><strong>Ahead of time (before about 15:15)?</strong> ↓ for the developer demo; otherwise →.</p><p>"The visitor figures are structured data in NeoWiki. The AI writes a graph query, runs it through the MCP server, and does the arithmetic."</p></aside>
+				</section>
+				<section>
+					<div class="eyebrow">MediaWiki MCP Server · for developers</div>
+					<h2>Interactive charts, built and checked by AI</h2>
+					<div class="cards cards-2">
+						<div class="card">
+							<div class="card-label">MCP server 1</div>
+							<h3>MediaWiki</h3>
+							<p>Reads the wiki and writes the template, Lua module and gadget</p>
+						</div>
+						<div class="card">
+							<div class="card-label">MCP server 2</div>
+							<h3>A browser</h3>
+							<p>Opens the result to check that it looks and works right</p>
+						</div>
+					</div>
+					<p class="footnote">The task: a chart template for NeoWiki data, and a page that uses it</p>
+					<aside class="notes"><p>"A developer's agent, Claude Code, with two MCP servers: ours for the wiki, and a browser. The task: a chart template for NeoWiki data. 24 minutes of work, in about one."</p></aside>
+				</section>
+				<section class="beat" data-background-video="beats/dev-1-build.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+					data-label="Recorded · 10× speed">
+					<aside class="notes"><p>"It writes and tests the Lua module, then adds the gadget, the template with its TemplateData, and a page that uses it."</p></aside>
+				</section>
+				<section class="beat" data-background-video="beats/dev-2-first-look.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+					data-label="Recorded · 2× speed">
+					<aside class="notes"><p>"Then it opens the page in a real browser. The chart works, but the table caption under it wraps into a narrow column. Only a browser shows that."</p></aside>
+				</section>
+				<section class="beat" data-background-video="beats/dev-3-fix.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+					data-label="Recorded · 3× speed">
+					<aside class="notes"><p>"It spots bars spaced too far apart, fixes the gadget, and checks again."</p></aside>
+				</section>
+				<section class="beat" data-background-video="beats/dev-4-finished.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+					data-label="Recorded · 2× speed">
+					<aside class="notes"><p>"The finished chart, with a sortable data table, also checked at phone width."</p></aside>
+				</section>
+				<section class="part-slide">
+					<span class="live-pill">Live</span>
+					<h2 style="margin-top: 0.5em;">The result, in the wiki</h2>
+					<aside class="notes"><p>Optional. Ctrl+Tab · search "Museum attendance" · hover over the chart · Alt+← back to the Main Page · Ctrl+Tab · →</p></aside>
+				</section>
 			</section>
 
 			<!-- ==================== SET IT UP ==================== -->
@@ -764,7 +806,7 @@
 				<aside class="notes"><p>"Developers bring their own AI tool. Everyone else gets the assistant: inside the wiki, under their own name, nothing to install."</p><p>Custom: any OpenAI-compatible endpoint, including self-hosted models and EU clouds.</p></aside>
 			</section>
 
-			<section class="beat" data-background-video="beats/editor-01-founded.mp4" data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+			<section class="beat" data-background-video="beats/editor-01-founded.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
 				data-label="Recorded · wait sped up 2×">
 				<aside class="notes"><p>"An editor asks when the museum was founded. The assistant searches the wiki and answers with a numbered source. Available today."</p></aside>
 			</section>
@@ -779,31 +821,31 @@
 				<aside class="notes"><p>Say: changing the wiki, and the chart after it, are not in production yet; they run on a dev wiki. Changes need Thinking mode.</p><p>"Watch which of the nine mentions change."</p></aside>
 			</section>
 
-			<section class="beat" data-background-video="beats/editor-02-rename.mp4" data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+			<section class="beat" data-background-video="beats/editor-02-rename.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
 				data-label="Recorded · waits sped up 2×">
 				<aside class="notes"><p>"The editor reports the new name. The assistant searches for every mention and reads each page."</p></aside>
 			</section>
-			<section class="beat" data-background-video="beats/editor-03-result.mp4" data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+			<section class="beat" data-background-video="beats/editor-03-result.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
 				data-label="Recorded">
 				<aside class="notes"><p>"It moved the page, changed the current mentions, kept the historical ones, and links each change. No approval needed: the editor asked for exactly this."</p></aside>
 			</section>
-			<section class="beat" data-background-video="beats/editor-04-diff.mp4" data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+			<section class="beat" data-background-video="beats/editor-04-diff.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
 				data-label="Recorded">
 				<aside class="notes"><p>"'Director of the Varden City Museum' changed. 'Joined … as an archivist in 2004' stayed. ReplaceText would have changed all nine."</p><p>Point at the summary: the editor's own name, and the change tag.</p></aside>
 			</section>
-			<section class="beat" data-background-video="beats/editor-07-renamed.mp4" data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+			<section class="beat" data-background-video="beats/editor-07-renamed.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
 				data-label="Recorded">
 				<aside class="notes"><p>"The new name, and the infobox follows."</p></aside>
 			</section>
-			<section class="beat" data-background-video="beats/editor-08-approval-card.mp4" data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+			<section class="beat" data-background-video="beats/editor-08-approval-card.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
 				data-label="Recorded · waits sped up 2×">
 				<aside class="notes"><p>"A statement, not a request: entry is now free every Sunday. The assistant proposes changes to two pages and asks first."</p></aside>
 			</section>
-			<section class="beat" data-background-video="beats/editor-09-dialog.mp4" data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+			<section class="beat" data-background-video="beats/editor-09-dialog.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
 				data-label="Recorded">
 				<aside class="notes"><p>"Each change in plain words."</p></aside>
 			</section>
-			<section class="beat" data-background-video="beats/editor-10-approved.mp4" data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+			<section class="beat" data-background-video="beats/editor-10-approved.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
 				data-label="Recorded · waits sped up 2×">
 				<aside class="notes"><p>"Approved: both pages change." Why ask here? "The approval check compares changes with the user's own words and never sees wiki content. So a change you didn't ask for waits for approval, even when a page told the AI to make it."</p></aside>
 			</section>
@@ -816,7 +858,7 @@
 					<p class="prompt-quote">“Chart the population of the cities in the wiki, by country.”</p>
 					<aside class="notes"><p>Wiki tab · Main Page · open the assistant · <strong>Thinking</strong> · type the prompt · ~25 s · pick Spain in the Country menu</p><p>"The cities and their populations are structured data in NeoWiki. The assistant queries the graph and draws an interactive chart, filterable by country."</p><p>Then: "NeoWiki is where the ECHOLOT panel picks up, right after the questions."</p><p>Fails or over 45 s: back to the deck, ↓</p></aside>
 				</section>
-				<section class="beat" data-background-video="beats/chart-backup.mp4" data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+				<section class="beat" data-background-video="beats/chart-backup.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
 					data-label="Recorded · waits sped up 2×">
 					<aside class="notes"><p>"The assistant queries NeoWiki and draws an interactive chart. Filtered to Spain."</p></aside>
 				</section>
