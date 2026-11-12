@@ -481,6 +481,19 @@
 			color: var(--slide-text);
 		}
 
+
+		/* ── Speaker slide, as in the NeoWiki deck ── */
+		.reveal h2.speaker-name { font-size: 72px; font-weight: 800; margin-bottom: 0.15em; }
+		.reveal .speaker-role { font-size: 30px; margin: 0; }
+		.reveal .speaker-logos {
+			display: flex;
+			gap: 40px;
+			align-items: center;
+			justify-content: center;
+			margin-top: 48px;
+		}
+		.reveal .speaker-logos img { margin: 0; }
+
 		/* ── Logo overlay ── */
 		#pw-logo-overlay {
 			position: fixed;
@@ -587,11 +600,32 @@
 			<section class="title-slide">
 				<div class="pill-label">MediaWiki Users and Developers Conference Fall 2026</div>
 				<h1>Let AI Work<br>With Your Wiki</h1>
-				<p class="subtitle">The MediaWiki MCP Server and the AI Assistant</p>
 				<div class="title-meta-row meta">
 					<span>Jeroen De Dauw · Professional Wiki</span>
 				</div>
 				<aside class="notes"><p>Hello again, and hello YouTube. About 20 minutes, then questions.</p><p>15:17 at "Instant answers" · 15:27 at the live chart · 15:29 at Q&amp;A · 15:40 hard stop</p></aside>
+			</section>
+
+			<!-- ==================== SPEAKER ==================== -->
+			<section>
+				<h2 class="speaker-name">Jeroen De Dauw</h2>
+				<p class="speaker-role meta">CEO of Professional Wiki</p>
+				<div class="speaker-logos">
+					<img src="img/mediawiki-logo.svg" alt="MediaWiki" style="height: 72px;">
+					<img src="img/smw-logo.svg" alt="Semantic MediaWiki" style="height: 72px;">
+					<img src="img/wikibase-mark.svg" alt="Wikibase" style="height: 58px;">
+					<img src="img/neowiki-icon.svg" alt="NeoWiki" style="height: 72px;">
+				</div>
+				<aside class="notes">
+					<p>
+						Many of you know me, as I've been active in the MediaWiki space since 2009.
+					</p>
+
+					<p>
+						Nowadays I run Professional Wiki. We maintain Semantic MediaWiki,
+						contribute to the Wikibase ecosystem, and now also develop our new NeoWiki product.
+					</p>
+				</aside>
 			</section>
 
 			<!-- ==================== AGENDA ==================== -->
