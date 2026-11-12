@@ -733,53 +733,49 @@
 				<aside class="notes"><p>"A web chat, connected to the museum wiki through the MCP server. A question no single page answers: the AI searches, reads what it needs, and answers with links."</p></aside>
 			</section>
 
-			<!-- MCP clip 2, with the optional developer demo one step down -->
-			<section>
-				<section class="beat" data-background-video="beats/mcp-2-query.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
-					data-label="Recorded · waits sped up">
-					<aside class="notes"><p><strong>Ahead of time (before about 15:15)?</strong> ↓ for the developer demo; otherwise →.</p><p>"The visitor figures are structured data in NeoWiki. The AI writes a graph query, runs it through the MCP server, and does the arithmetic."</p></aside>
-				</section>
-				<section>
-					<div class="eyebrow">MediaWiki MCP Server · for developers</div>
-					<h2>Interactive charts, built and checked by AI</h2>
-					<div class="cards cards-2">
-						<div class="card">
-							<div class="card-label">MCP server 1</div>
-							<h3>MediaWiki</h3>
-							<p>Reads the wiki and writes the template, Lua module and gadget</p>
-						</div>
-						<div class="card">
-							<div class="card-label">MCP server 2</div>
-							<h3>A browser</h3>
-							<p>Opens the result to check that it looks and works right</p>
-						</div>
-					</div>
-					<p class="footnote">The task: a chart template for NeoWiki data, and a page that uses it</p>
-					<aside class="notes"><p>"A developer's agent, Claude Code, with two MCP servers: ours for the wiki, and a browser. The task: a chart template for NeoWiki data. 24 minutes of work, in about one."</p></aside>
-				</section>
-				<section class="beat" data-background-video="beats/dev-1-build.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
-					data-label="Recorded · 10× speed">
-					<aside class="notes"><p>"It writes and tests the Lua module, then adds the gadget, the template with its TemplateData, and a page that uses it."</p></aside>
-				</section>
-				<section class="beat" data-background-video="beats/dev-2-first-look.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
-					data-label="Recorded · 2× speed">
-					<aside class="notes"><p>"Then it opens the page in a real browser. The chart works, but the table caption under it wraps into a narrow column. Only a browser shows that."</p></aside>
-				</section>
-				<section class="beat" data-background-video="beats/dev-3-fix.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
-					data-label="Recorded · 3× speed">
-					<aside class="notes"><p>"It spots bars spaced too far apart, fixes the gadget, and checks again."</p></aside>
-				</section>
-				<section class="beat" data-background-video="beats/dev-4-finished.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
-					data-label="Recorded · 2× speed">
-					<aside class="notes"><p>"The finished chart, with a sortable data table, also checked at phone width."</p></aside>
-				</section>
-				<section class="part-slide">
-					<span class="live-pill">Live</span>
-					<h2 style="margin-top: 0.5em;">The result, in the wiki</h2>
-					<aside class="notes"><p>Optional. Ctrl+Tab · search "Museum attendance" · hover over the chart · Alt+← back to the Main Page · Ctrl+Tab · →</p></aside>
-				</section>
+			<!-- MCP clip 2, then the developer demo -->
+			<section class="beat" data-background-video="beats/mcp-2-query.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+				data-label="Recorded · waits sped up">
+				<aside class="notes"><p>"The visitor figures are structured data in NeoWiki. The AI writes a graph query, runs it through the MCP server, and does the arithmetic."</p></aside>
 			</section>
-
+			<section>
+				<div class="eyebrow">MediaWiki MCP Server · for developers</div>
+				<h2>Interactive charts, built and checked by AI</h2>
+				<div class="cards cards-2">
+					<div class="card">
+						<div class="card-label">MCP server 1</div>
+						<h3>MediaWiki</h3>
+						<p>Reads the wiki and writes the template, Lua module and gadget</p>
+					</div>
+					<div class="card">
+						<div class="card-label">MCP server 2</div>
+						<h3>A browser</h3>
+						<p>Opens the result to check that it looks and works right</p>
+					</div>
+				</div>
+				<p class="footnote">The task: a chart template for NeoWiki data, and a page that uses it</p>
+				<aside class="notes"><p>"A developer's agent, Claude Code, with two MCP servers: ours for the wiki, and a browser. The task: a chart template for NeoWiki data. 24 minutes of work, in about one."</p></aside>
+			</section>
+			<section class="beat" data-background-video="beats/dev-1-build.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+				data-label="Recorded · 10× speed">
+				<aside class="notes"><p>"It writes and tests the Lua module, then adds the gadget, the template with its TemplateData, and a page that uses it."</p></aside>
+			</section>
+			<section class="beat" data-background-video="beats/dev-2-first-look.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+				data-label="Recorded · 2× speed">
+				<aside class="notes"><p>"Then it opens the page in a real browser. The chart works, but the table caption under it wraps into a narrow column. Only a browser shows that."</p></aside>
+			</section>
+			<section class="beat" data-background-video="beats/dev-3-fix.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+				data-label="Recorded · 3× speed">
+				<aside class="notes"><p>"It spots bars spaced too far apart, fixes the gadget, and checks again."</p></aside>
+			</section>
+			<section class="beat" data-background-video="beats/dev-4-finished.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
+				data-label="Recorded · 2× speed">
+				<aside class="notes"><p>"The finished chart, with a sortable data table, also checked at phone width."</p></aside>
+			</section>
+			<section class="part-slide">
+				<h2>The result, in the wiki</h2>
+				<aside class="notes"><p>Ctrl+2 · Museum attendance · hover over the chart · Ctrl+1 · →</p></aside>
+			</section>
 			<!-- ==================== SET IT UP ==================== -->
 			<section>
 				<div class="eyebrow">MediaWiki MCP Server</div>
@@ -890,7 +886,7 @@
 					<span class="live-pill">Live</span> <span class="status dev">Not in production yet</span>
 					<h2 style="margin-top: 0.5em;">A chart from NeoWiki data</h2>
 					<p class="prompt-quote">“Chart which centuries each museum's paintings come from.”</p>
-					<aside class="notes"><p>Wiki tab · Main Page · open the assistant · <strong>Thinking</strong> · type the prompt · ~30 s · if the chart looks small, click ⛶ to enlarge it</p><p>While it works: "It reads the wiki's schemas, to learn how paintings, artists and museums connect. Then it writes a graph query over all 84 paintings and follows each one to its museum. The numbers come straight from that query, not from the model's memory, and it designs the chart itself. Normally that takes someone who knows the data model and a query language. Here, anyone can ask."</p><p>Point at its text too: it reads the result, not only draws it.</p><p>Then: "NeoWiki is where the ECHOLOT panel picks up, right after the questions."</p><p>Fails or over 45 s: back to the deck, ↓</p></aside>
+					<aside class="notes"><p>Ctrl+3 · Main Page · open the assistant · <strong>Thinking</strong> · type the prompt · ~30 s · if the chart looks small, click ⛶ to enlarge it</p><p>While it works: "It reads the wiki's schemas, to learn how paintings, artists and museums connect. Then it writes a graph query over all 84 paintings and follows each one to its museum. The numbers come straight from that query, not from the model's memory, and it designs the chart itself. Normally that takes someone who knows the data model and a query language. Here, anyone can ask."</p><p>Point at its text too: it reads the result, not only draws it.</p><p>Then: "NeoWiki is where the ECHOLOT panel picks up, right after the questions."</p><p>Ctrl+1 back to the deck, → · Fails or over 45 s: Ctrl+1, ↓</p></aside>
 				</section>
 				<section class="beat" data-background-video="beats/chart-backup.mp4" data-background-video-muted data-background-size="contain" data-background-color="#000" data-transition="none" data-background-transition="none"
 					data-label="Recorded · waits sped up 2×">
